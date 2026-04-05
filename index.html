@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subhankar Pattanayak | SAP Leadership</title>
+    <meta name="description" content="Profile of Subhankar Pattanayak, Director & Head of Bid Management for SAP across ANZ and India. Expert in AI, Data Science & Analytics.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div class="container">
+        <header class="glass-panel profile-header">
+            <div class="avatar-container">
+                <img src="assets/avatar.png" alt="Subhankar Pattanayak Avatar" class="avatar">
+                <div class="status-indicator"></div>
+            </div>
+            <div class="profile-info">
+                <h1 class="gradient-text">Subhankar Pattanayak</h1>
+                <h2 class="role">Director & Head of Bid Management <span class="highlight">@ SAP</span></h2>
+                <div class="badges">
+                    <span class="badge">ANZ & India</span>
+                    <span class="badge">15+ Years Exp</span>
+                    <span class="badge">AI & Data Science</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="glass-panel about-section">
+            <h3 class="section-title">Professional Summary</h3>
+            <p>
+                As the <strong>Director and Head of Bid Management for SAP</strong> across Australia, New Zealand, and India, I have spent over 15 years driving enterprise innovation, industry marketing, and value engineering. My team and I specialize in managing SAP’s end-to-end deal cycle, meticulously crafting customer-centric proposals and strategic business cases that empower digital transformation and sustainable growth.
+            </p>
+        </section>
+
+        <div class="card-grid">
+            <section class="glass-panel card">
+                <div class="icon">💼</div>
+                <h3>Deal Cycle Expert</h3>
+                <p>Leading high-stakes bid management and comprehensive value engineering to deliver compelling, customer-centric business cases.</p>
+            </section>
+            <section class="glass-panel card">
+                <div class="icon">🎓</div>
+                <h3>SAP University Alliance</h3>
+                <p>Partnering with academia to teach cutting-edge topics including Artificial Intelligence, Data Science, and Advanced Analytics.</p>
+            </section>
+        </div>
+
+        <section class="glass-panel contact-section">
+            <h3 class="section-title">Let's Connect</h3>
+            <p>Ready to discuss enterprise software, AI, or strategic bid management?</p>
+            <a href="https://www.linkedin.com/search/results/all/?keywords=Subhankar+Pattanayak+SAP" target="_blank" class="primary-btn">Connect on LinkedIn</a>
+        </section>
+    </div>
+
+    <script>
+        // Micro-interaction for cards on hover
+        const cards = document.querySelectorAll('.card, .glass-panel');
+        cards.forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>
+</body>
+</html>
